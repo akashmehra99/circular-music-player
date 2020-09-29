@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Circular Html5 Audio Player Demo</title>
+  <link rel="stylesheet" href="progres-bar.css">
+</head>
+
+<body>
+    <div class="slide__audio js-audio">
+      <audio class="slide__audio-player" controls id="player">
+        <source id="audio" src="https://www.soundjay.com/nature/sounds/rain-01.mp3" type="audio/mpeg" />
+      </audio>
+      <div class="audio__controls">
+        <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 100 100">
+          <path id="seekbar" fill="none" stroke-meterlimit="10"
+            d="M50,2.9L50,2.9C76,2.9,97.1,24,97.1,50v0C97.1,76,76,97.1,50,97.1h0C24,97.1,2.9,76,2.9,50v0C2.9,24,24,2.9,50,2.9z" />
+        </svg>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 110 110">
+          <circle class="stroke-1" cx="50" cy="50" r="47" />
+        </svg>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="equalizer" viewBox="0 0 100 100">
+          <g class="equalizer-group">
+            <rect class="bar"></rect>
+            <rect class="bar"></rect>
+            <rect class="bar"></rect>
+            <rect class="bar"></rect>
+            <rect class="bar"></rect>
+          </g>
+        </svg> -->
+        <button class="play-pause">
+          <i class="gg-play-button" id="btnIcon"></i>
+        </button>
+
+      </div>
+      <div>
+        <input type="file" id="input"/>
+      </div>
+    </div>
+    <!-- Media Player / -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="player.js"></script>
+</body>
+
+</html>
